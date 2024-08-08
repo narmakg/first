@@ -16,7 +16,7 @@ const TodoList = ({ value }) => {
     copyTask.splice(i, 1);
     setmainTask(copyTask);
   };
-  let renderTast = <h2>NO Task Avilible Kamran</h2>;
+  let renderTast = <h2>NO Task Avilible</h2>;
   if (mainTask.length > 0) {
     renderTast = mainTask.map((t, i) => {
       return (
