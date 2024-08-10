@@ -16,7 +16,7 @@ const TodoList = ({ value }) => {
     copyTask.splice(i, 1);
     setmainTask(copyTask);
   };
-  let renderTast = <h2>NO Task Avilible</h2>;
+  let renderTast = <h2 className="mx-auto text-center">NO Task Avilible</h2>;
   if (mainTask.length > 0) {
     renderTast = mainTask.map((t, i) => {
       return (
@@ -39,15 +39,17 @@ const TodoList = ({ value }) => {
   }
   return (
     <div>
-      <div className="container">
+      <div className="container ">
         <form onSubmit={Submit}>
           <div className="row ">
-            <h1 className="btn btn-dark fw-bold mb-4 rounded-pill">Todo List</h1>
+            <h1 className="btn btn-dark fw-bold mb-4 rounded-pill">
+              Todo List
+            </h1>
 
             <div className="col-4">
               <input
                 type="text"
-                className="form-control border border-3 border-dark rounded-pill "
+                className="form-control border border-3 border-dark rounded-pill ms-4 "
                 placeholder="Enter Your Todo"
                 value={title}
                 onChange={(e) => {
@@ -58,7 +60,7 @@ const TodoList = ({ value }) => {
             <div className="col-4">
               <input
                 type="text"
-                className="form-control border border-3 border-dark rounded-pill "
+                className="form-control border border-3 border-dark rounded-pill ms-4 "
                 placeholder="Enter The Discription"
                 value={description}
                 onChange={(d) => {
@@ -67,11 +69,13 @@ const TodoList = ({ value }) => {
               />
             </div>
             <div className="col-2">
-              <button className="btn btn-warning rounded-5 ">{value}</button>
+              <button className="btn btn-warning rounded-3 ms-4 ">
+                {value}
+              </button>
             </div>
           </div>
         </form>
-        <div className="bg-info p-2 m-3 row ">
+        <div className="bg-transparent text-white p-2 m-3 row ">
           <ol>{renderTast}</ol>
         </div>
       </div>

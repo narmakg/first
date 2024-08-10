@@ -1,21 +1,14 @@
-"use client"
-import Link from "next/link"
-import "bootstrap/dist/css/bootstrap.min.css";
+"use client";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Link from "next/link";
+
 import TodoList from "./Todo";
 import { useState } from "react";
 
-
 export default function Home() {
- 
   return (
     <>
-
-      <TodoList value='add' />
-      
-
-
-
-
+      <TodoList value="add" />
     </>
-  )
-};
+  );
+}
