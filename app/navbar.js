@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div className="container-fluid">
-          <Link className="navbar-brand" href="/">
+          <Link className="navbar-brand" href="./">
             Kamran Irshad
           </Link>
           {/* <!-- toggle button --> */}
@@ -45,30 +45,30 @@ const Navbar = () => {
                   <Link
                     className="nav-link active mx-2"
                     aria-current="page"
-                    href="/"
+                    href="./"
                   >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item mx-2">
-                  <Link className="nav-link" href="/About">
+                  <Link className="nav-link" href="./About">
                     About
                   </Link>
                 </li>
                 <li className="nav-item mx-2">
-                  <Link className="nav-link" href="/Movies">
+                  <Link className="nav-link" href="./Movies">
                     Movies
                   </Link>
                 </li>
                 <li className="nav-item mx-2">
-                  <Link className="nav-link" href="/Product">
+                  <Link className="nav-link" href="./Product">
                     Product
                   </Link>
                 </li>
               </ul>
               <form className="d-flex mx-2" role="search">
                 <input
-                  className="form-control me-2 text-white text-bold"
+                  className="form-control me-2 text-dark text-bold"
                   placeholder="Search"
                   aria-label="Search"
                 />
